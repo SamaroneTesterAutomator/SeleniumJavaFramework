@@ -18,7 +18,7 @@ public class HomePage {
 
 	
 	//Constructor
-	public HomePage(WebDriver drivern) {
+	public HomePage(WebDriver driver) {
 		this.driver = driver;
 		driver.get(PAGE_URL);
 		
