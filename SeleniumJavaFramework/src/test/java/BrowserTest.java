@@ -10,12 +10,12 @@ public class BrowserTest {
 		String projectPath = System.getProperty("user.dir");
 		
 		
-//		System.setProperty("webdriver.gecko.driver",projectPath+"\\drivers\\geckoDriver\\geckodriver.exe");
-//		WebDriver driver = new FirefoxDriver();
+		System.setProperty("webdriver.gecko.driver",projectPath+"\\drivers\\geckoDriver\\geckodriver.exe");
+		WebDriver driver = new FirefoxDriver();
 		
-		System.setProperty("webdriver.chrome.driver", projectPath+"\\drivers\\chromeDriver\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
-		
+//		System.setProperty("webdriver.chrome.driver", projectPath+"\\drivers\\chromeDriver\\chromedriver.exe");
+//		WebDriver driver = new ChromeDriver();
+//		
 		driver.get("https://www.selenium.dev/");
 	}
 }
