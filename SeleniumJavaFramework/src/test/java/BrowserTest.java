@@ -1,5 +1,6 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
@@ -18,8 +19,12 @@ public class BrowserTest {
 //		WebDriver driver = new ChromeDriver();
 		
 		
-		System.setProperty("webdriver.ie.driver", projectPath+"\\drivers\\ieDriver\\IEDriverServer.exe");
-		WebDriver driver = new InternetExplorerDriver();
+//		System.setProperty("webdriver.ie.driver", projectPath+"\\drivers\\ieDriver\\IEDriverServer.exe");
+//		WebDriver driver = new InternetExplorerDriver();
+//		
+	
+		System.setProperty("webdriver.edge.driver", projectPath+"\\drivers\\edgeDriver\\msedgedriver.exe");
+		WebDriver driver = new EdgeDriver();
 		
 		driver.get("https://www.selenium.dev/");
 	}
