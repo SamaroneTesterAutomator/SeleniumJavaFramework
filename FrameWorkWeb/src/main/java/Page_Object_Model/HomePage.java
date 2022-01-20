@@ -3,6 +3,7 @@ package Page_Object_Model;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
 
@@ -14,6 +15,18 @@ public class HomePage {
 	//SignIn Button
 	@FindBy(xpath =  "//a[@class='login']")
 	private WebElement signInButton;
+
+	
+	//Constructor
+	public HomePage(WebDriver drivern) {
+		this.driver = driver;
+		driver.get(PAGE_URL);
+		
+	//Initialise Elements
+	PageFactory.initElements(driver, this);
+	}
+	
+	
 	
 	
 	
