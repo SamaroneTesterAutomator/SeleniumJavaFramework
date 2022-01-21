@@ -1,4 +1,8 @@
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -26,6 +30,14 @@ public class BrowserTest {
 		System.setProperty("webdriver.edge.driver", projectPath+"\\drivers\\edgeDriver\\msedgedriver.exe");
 		WebDriver driver = new EdgeDriver();
 		
-		driver.get("https://www.selenium.dev/");
+		driver.get("https://www.google.com");
+		
+//		WebElement textBox = driver.findElement(By.name("q"));
+//		textBox.sendKeys("TESTE GOOGLE!!!!!");
+		
+//		List<WebElement> listOfInputsElements = driver.findElements(By.xpath("//input"));
+//		int count = listOfInputsElements.size();
+//		System.out.println("Count of Input Elements : "+count);
+//		
 	}
 }
