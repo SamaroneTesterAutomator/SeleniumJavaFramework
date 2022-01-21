@@ -17,6 +17,7 @@ public class GoogleSearchPageTest {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		
+		//Instanciando a classe 
 		GoogleSearchPageObjects searchPageObj = new GoogleSearchPageObjects(driver);
 		
 		driver.get("https://www.google.com");

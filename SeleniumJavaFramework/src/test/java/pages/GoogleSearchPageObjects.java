@@ -14,10 +14,12 @@ public class GoogleSearchPageObjects {
 		this.driver = driver;
 	}
 
+	//Function input text search
 	public void setTextInSearchBox(String text) {
 		driver.findElement(textbox_search).sendKeys(text);
 	}
 	
+	//Function click button search
 	public void clickSearchButton() {
 		driver.findElement(button_search).click();
 	}
